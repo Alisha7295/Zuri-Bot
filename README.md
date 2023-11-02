@@ -1,4 +1,4 @@
-<h1> Hello everyone 🍑 <img src="https://i.imgur.com/ED5IVuj.jpg" width="37"></h1> 
+<h1> Hello everyone 🍑 </h1>
 
 <h1>HƯỚNG DẪN CÁCH CÀI ĐẶT BOT MESSENGER TRÊN CÁC NỀN TẢNG</h1>
 
