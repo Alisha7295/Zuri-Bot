@@ -1,6 +1,6 @@
 module.exports = function({ api, models }) {
 
-  const { ADMINBOT, SUPERADMIN } = global.config;
+  const { ADMINBOT, NDH } = global.config;
  const Users = require("./controllers/users")({ models, api }),
     Threads = require("./controllers/threads")({ models, api }),
     Currencies = require("./controllers/currencies")({ models });
