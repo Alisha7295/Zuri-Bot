@@ -18,16 +18,16 @@ module.exports.config = {
 };
 module.exports.run = async ({ event, api, args }) => {
 module.exports.circle = async (image) => {
-    const jimp = global.nodemodule["jimp"];
+    const jimp = require("jimp");
     image = await jimp.read(image);
     image.circle();
     return await image.getBufferAsync("image/png");
   }
-  const jimp = global.nodemodule["jimp"];
-  const Canvas = global.nodemodule["canvas"];
-  const superfetch=global.nodemodule["node-superfetch"];
-  const fs = global.nodemodule["fs-extra"];
-  const axios = global.nodemodule["axios"];
+  const jimp = require("jimp");
+  const Canvas = require("canvas");
+  const superfetch = require("node-superfetch");
+  const fs = require("fs-extra");
+  const axios = require("axios");
   const img = new Canvas.Image();
   function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)) };
   const { threadID, messageID } = event;
