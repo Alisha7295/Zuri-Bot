@@ -17,13 +17,13 @@ module.exports = (data, option) => {
 module.exports.loader = (data, option) => {
 	switch (option) {
 		case "warn":
-			console.log(chalk.bold.hex("#66FF00")('» •CHUNGDAT• « ') + data);
+			console.log(chalk.bold.hex("#66FF00")('[ Zuri-Bot ] » ') + data);
 			break;
 		case "error":
-			console.log(chalk.bold.hex("#FF0000")('» •CHUNGDAT• « ') + data);
+			console.log(chalk.bold.hex("#FF0000")('[ Zuri-Bot ] » ') + data);
 			break;
 		default:
-			console.log(chalk.bold.hex("#3399CC")('» •CHUNGDAT• « ') + data);
+			console.log(chalk.bold.hex("#3399CC")('[ Zuri-Bot ] » ') + data);
 			break;
 	}
 }
