@@ -1,4 +1,4 @@
-<h1> Hello everyone 🍑 </h1>
+<h1> Hello everyone</h1>
 
 <h1>HƯỚNG DẪN CÁCH CÀI ĐẶT BOT MESSENGER TRÊN CÁC NỀN TẢNG</h1>
 
@@ -15,6 +15,7 @@
 - Nhập link **github** này vào **from** và **click** vào nút **Import from github**
 - Đợi repl **Importing...**
 - Qua shell gõ câu lệnh **npm install** để cài package nhé
+
 **LƯU Ý: NẾU CÓ REPL PRO/HACKER THÌ CHỌN PRIVATE TRÁNH BỊ MÒ FILE NHÉ**
 
 **Các câu lệnh giúp ích cho bạn**
