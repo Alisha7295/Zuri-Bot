@@ -1,12 +1,8 @@
-//////////////////////////////////////////////////////
-//========= Require all variable need use =========//
-/////////////////////////////////////////////////////
-
 const { readdirSync, readFileSync, writeFileSync, existsSync, unlinkSync, rm } = require("fs-extra");
 const { join, resolve } = require("path");
 const { execSync } = require('child_process');
 const logger = require("./utils/log.js");
-const login = require("fca-horizon-remastered");
+const login = require("fca-dongdev2006");
 const axios = require("axios");
 const listPackage = JSON.parse(readFileSync('./package.json')).dependencies;
 const listbuiltinModules = require("module").builtinModules;
@@ -374,8 +370,12 @@ function onBot({ models: botModel }) {
 //////////////////////////////////////////////
 //////////======BIGTEXT 7 MÀU======//////////
 /////////////////////////////////////////////
-
-  const chalkAnimation = require('chalkercli'); chalkAnimation.rainbow('\n██████╗░░█████╗░██╗░░██╗\n██╔══██╗██╔══██╗██║░██╔╝\n██████╦╝██║░░██║█████═╝░\n██╔══██╗██║░░██║██╔═██╗░\n██████╦╝╚█████╔╝██║░╚██╗\n╚═════╝░░╚════╝░╚═╝░░╚═╝');
+  const chalkAnimation = require('chalkercli'); chalkAnimation.rainbow(`
+  ____        _     ___     _____ 
+ |_  /  _ _ _(_)___| _ ) __|_   _|
+  / / || | '_| |___| _ \/ _ \| |  
+ /___\_,_|_| |_|   |___/\___/|_|
+`);
 
 //////////////////////////////////////////////
 //////////////////////////////////////////////
@@ -395,4 +395,3 @@ function onBot({ models: botModel }) {
     } catch (error) { logger(global.getText('mirai', 'successConnectDatabase', JSON.stringify(error)), '[ DATABASE ]'); }
 })();
 process.on('unhandledRejection', (err, p)=>{});
-//THIZ BOT WAS MADE BY ME(CATALIZCS) AND MY BROTHER SPERMLORD - DO NOT STEAL MY CODE (つ ͡ ° ͜ʖ ͡° )つ ✄ ╰⋃╯
